@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+
+/* header start */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+#header #bar {
+    cursor: pointer;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header .logo {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: hsl(36, 44%, 70%);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: hsl(36, 44%, 70%);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+/* home page */
+#hero {
+    background-image: url("photos/my\ everyday\ jewelry\ collection\ 2020\ _\ Luxury\ \(Cartier\,\ Tiffany\ &\ Co_\)\ AND\ Affordable\ Gold\ Jewelry.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0% right 0 left 0;
+    height: 95vh;
+    width: 100%;
+    padding: 0 80px 90px 80px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#hero h4 {
+    color: rgb(253, 250, 250);
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 20px 0 0 0 ;
+}
+
+#hero h2 {
+    padding: 20px 0;
+    color: #fff;
+}
+
+#hero button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+
+/* feature page */
+#feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    background-color: hsl(39, 58%, 95%);
+}
+
+#feature .fe-box {
+    display: initial;
+    width: 37%;
+    height: 57vh;
+    border: 0.5px solid #000;
+    margin: 15px 0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#feature .fe-box a {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#feature .box {
+    display: initial;
+    width: 37%;
+    height: 57vh;
+    border: 0.5px solid #000;
+    margin: 15px 0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+#feature .box img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#feature .box a {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* clothes for her */
+#her {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#her img {
+    height: 95vh;
+    width: 50%;
+    border: 0.5px solid #000;
+    box-shadow: -6px 9px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+#her .text {
+    margin: 0 0 0 80px;
+    text-align: center;
+}
+
+#her .text h2 {
+    text-transform: capitalize;
+    color: hsl(37, 18%, 40%);
+}
+
+#her .text p {
+    text-transform: capitalize;
+}
+
+#her .text button {
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: hsl(36, 44%, 70%);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* clothes for him */
+#him {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#him img {
+    width: 50%;
+    height: 85vh;
+    border: 0.5px solid #000;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+#him .text {
+    margin: 0 90px 0 0;
+    text-align: center;
+}
+
+#him .text h2 {
+    text-transform: capitalize;
+    color: hsl(37, 18%, 40%);
+}
+
+#him .text p {
+    text-transform: capitalize;
+}
+
+#him .text button {
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: hsl(36, 44%, 70%);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* accsesories */
+#accsesories {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#accsesories img {
+    height: 95vh;
+    width: 50%;
+    border: 0.5px solid #000;
+    box-shadow: -6px 9px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+#accsesories .text {
+    margin: 0 0 0 80px;
+    text-align: center;
+}
+
+#accsesories .text h2 {
+    text-transform: capitalize;
+    color: hsl(37, 18%, 40%);
+}
+
+#accsesories .text p {
+    text-transform: capitalize;
+}
+
+#accsesories .text button {
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: hsl(36, 44%, 70%);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* about me  */
+
+
+
+/* footer page */
+#footer {
+    background-image: url("photos/bunner/footer2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+    padding: 0 80px 90px 80px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#footer h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#footer .footer-text span{
+    display: flex;
+    color: #fff;
+}
+
+#footer .footer-text a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#footer .footer-text a i {
+    padding-bottom: 20px;
+    font-size: 23px;
+}
+
+#footer .footer-text a .face {
+    margin-left: 10px;
+} 
+
+#footer .footer-text h6 {
+    font-size: 17px;
+    margin: 0 30px 20px 0;
+}
+
+#footer span {
+    color: #fff;
+}
+
+#footer span h6 {
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+#footer p {
+    margin: 0;
+    font-size: 21px;
+}
+
+
+/* products */
+#product1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#product1 .casual {
+    border-top: 1px solid #000;
+    padding-top: 30px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+#product1 .pro {
+    background-color: #fff;
+    width: 22%;
+    /* min-width: 250px; */
+    padding: 10px 12px;
+    border: 2px solid hsl(37, 18%, 40%);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 15px 0; 
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #000;
+    font-size: 12px; 
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 800;
+    color: hsl(37, 22%, 47%);
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 1px solid hsl(37, 22%, 47%); 
+    background-color: hsl(36, 44%, 70%);
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#product1 .pro .cart:hover {
+    background-color: hsl(37, 18%, 40%);
+}
+
+/* single product */
+#productils {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#productils .single-pro-img {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#productils .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#productils .single-pro-details h4{
+    text-transform: capitalize;
+    padding: 40px 0 20px 0;
+}
+
+#productils .single-pro-details h2 {
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+#productils .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#productils .single-pro-details select:focus {
+    outline: none;
+}
+
+#productils .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#productils .single-pro-details input:focus {
+    outline: none;
+}
+
+
+#productils .single-pro-details button {
+    background-color: hsl(36, 44%, 70%);
+    color: #fff;
+}
+
+#productils .single-pro-details span {
+    line-height: 25px;
+}
+
+
+
+
+/* bunner page
+#bunner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("/photos/bunner/Dark\ Blue\ and\ White\ Banner.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#bunner h4 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+}
+
+#bunner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#bunner h2 span {
+    color: #FFDE59;
+} */
+
+
+
+/* start media query */
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #fcf7ee;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        color: #000;
+        font-size: 28px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 95vh;
+        padding: 0 80px 90px 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #hero h2 {
+        padding: 20px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #feature {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60vh;
+        background-color: hsl(39, 58%, 95%);
+    }
+
+    .choose {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    #feature .fe-box {
+        width: 43%;
+        height: 48vh;
+        margin: 15px 15px;
+    }
+
+    #her {
+        justify-content: space-around;
+    }
+
+    #her .text {
+        margin: 0 0 0 20px;
+    }
+
+    #her img {
+        height: 60vh;
+    }
+
+    #him {
+        justify-content: space-around;
+    }
+
+    #him .text {
+        margin: 0 20px 0 0;
+    }
+
+    #him img {
+        height: 60vh;
+    }
+
+    #accsesories {
+        justify-content: space-around;
+    }
+
+    #accsesories img {
+        height: 60vh;
+    }
+
+    #accsesories .text {
+        margin: 0 0 0 20px;
+    }
+
+    #product1 .pro-container {
+        justify-content: space-between;
+    }
+
+    #product1 .pro {
+        width: 45%;
+        margin: 8px;
+    }
+
+    #footer {
+        height: 85vh;
+        padding: 0 80px 90px 80px;
+        background-position: top 30% right 39%;
+    }
+
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #bunner {
+        height: 20vh;
+    }
+}
+
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 50px;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px 90px 80px;
+        background-position: top 30% right 30% left 30%;
+    }
+
+    #hero h2 {
+        padding: 20px 0;
+        font-size: 28px;
+        align-items: center;
+    }
+
+    #feature {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    #feature .box {
+        width: 55%;
+        height: 38vh;
+    }
+    #feature .box img{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #feature .box a {
+        text-decoration: none;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        height: 27vh;
+    }
+
+    #feature .fe-box img{
+        width: 100%;
+        height: 22vh;
+    }
+
+    #her img {
+        height: 50vh;
+    }
+
+    #her .text {
+        margin: 0 0 0 2px;
+    }
+
+    #him img {
+        height: 50vh;
+    }
+
+    #him .text {
+        margin: 0 2px 0 0;
+    }
+
+    #accsesories img {
+        width: 47%;
+        height: 60vh;
+    }
+    #accsesories .text {
+        margin: 0 0 0 3px;
+    }
+    #accsesories .text h2 {
+        font-size: 30px;
+    }
+
+    #product1 .pro-container {
+        justify-content: space-between;
+    }
+
+    #product1 .pro {
+        width: 100%;
+        margin: 8px;
+    }
+
+    #footer {
+        height: 85vh;
+        padding: 0 80px 90px 80px;
+        background-position: top 30% right 39%;
+    }
+
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #productils {
+        display: flex;
+        flex-direction: column;
+    }
+    #productils .single-pro-img {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #productils .single-pro-details {
+        width: 100%;
+    }
+}

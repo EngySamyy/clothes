@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- header -->
+    <section id="header">
+        <a href="index.html"><h4 class="logo">ENGY.S</h4></a>
+
+        <div >
+            <ul id="navbar">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="#feature">shop</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="#footer">contact</a></li>
+                <li id="lg-bag"><a href="#"><i class="bi bi-bag"></i></a></li>
+                <a href="" id="close">
+                    <i class="bi bi-x"></i>
+                </a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="pages/cart.html"><i class="bi bi-bag"></i></a>
+            <i id="bar" class="bi bi-grid-fill"></i>
+            
+        </div>
+    </section>
+
+    <!-- home page -->
+    <section id="hero">
+            <h4>welcome</h4>
+            <h2>Quick and hassle-free shopping</h2>
+            <a href="choose.html">
+                <button>shop now</button>
+            </a>
+    </section>
+
+    <!-- feature page -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <a href="choose.html">
+                <img src="photos/men/casual/casualmen11.png" alt="clothes">
+                <h4>clothes</h4>
+            </a>
+        </div>
+        <div class="fe-box">
+            <a href="accsessories.html">
+                <img src="photos/acsessories/jewelryproduct21.png" alt="CASUAL clothes">
+                <h4>Accessories</h4>
+            </a>
+        </div>
+    </section>
+
+    <!-- clothes for her -->
+    <section id="her">
+        <img src="photos/women/formal/formal6.png" alt="clothes for her">
+        <div class="text">
+            <h2>clothes <br> for her</h2>
+            <p>Shop for classic or trendy pieces <br>
+                you can wear every day.</p>
+            <a href="her.html"><button>shop now</button></a>
+        </div>
+    </section>
+
+    <!-- clothes for him -->
+    <section id="him">
+        <img src="photos/men/bunner.png" alt="clothes for him">
+        <div class="text">
+            <h2>clothes <br> for him</h2>
+            <p>Look dashing while on the go <br>
+                with our casual wear items.</p>
+            <a href="him.html"><button>shop now</button></a>
+        </div>
+    </section>
+
+    <!-- accsesories -->
+    <section id="accsesories">
+        <img src="photos/acsessories/bunner.png" alt="accsesories">
+        <div class="text">
+            <h2>Accessories</h2>
+            <p>Add shoes, bags, and more to <br>
+                complement your look.</p>
+            <a href="accsessories.html"><button>shop now</button></a>
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section id="about">
+        
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <h2>ENGY.S</h2>
+        <div class="footer-text">
+            <a href="https://www.instagram.com/engyy_samyy/" >
+                <h6>instagram</h6>
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/engy.samy.980">
+                <h6>facebook</h6>
+                <i class="bi bi-facebook face"></i>
+            </a>
+            <span>
+                <h6>whatsapp</h6>
+                <p>(+20) 01282008089 </p>
+            </span>
+        </div>
+        <span class="span">
+            <h6>email</h6>
+            <p>engysamy74@gmail.com</p>
+        </span>
+    </section>
+
+
+
+
+<script>
+
+    // side bar
+    const bar = document.getElementById('bar');
+    const nav = document.getElementById('navbar');
+    const close = document.getElementById('close');
+    
+    if (bar) {
+        bar.addEventListener('click', () => {
+            nav.classList.add('active');
+        })
+    }
+    
+    if (close) {
+        close.addEventListener('click', () => {
+            nav.classList.remove('active');
+        })
+    }
+</script>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
